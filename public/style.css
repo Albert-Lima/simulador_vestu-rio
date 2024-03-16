@@ -17,6 +17,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.080);
 }
 .menuBtt{
     background-color: white;
@@ -80,14 +81,14 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 35px;
     position: fixed;
     left: -150px;
     height: calc(100vh - 65px);
     width: 150px;
     z-index: 1999;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: white;
 }
 .edit{
@@ -102,7 +103,7 @@ header{
     transition: 0.3s;
 }
 .edit:hover{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(242, 242, 242);
 }
 .descEdit{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -134,5 +135,44 @@ header{
     text-align: center;
     color: black;
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.29);
+    cursor: default;
+}
+
+
+/*poup-ups de seleção*/
+.boxSelect{
+    display: none
+}
+.boxSelect2{
+    position: fixed;
+    top: 55px;
+    left: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.089);
+    border-radius: 10px;
+    padding: 30px 10px;
+    gap: 10px;
+}
+.container-model1-1, .container-model2-1{
+    width: 80px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
     cursor: pointer;
+}
+.container-model1-1:hover, .container-model2-1:hover{
+    background-color: rgb(251, 251, 251);
+}
+.iconSelectTshirt{
+    height: 20px;
+}
+.title-style{
+    font-size: 10pt;
+    font-weight: 500;
 }
