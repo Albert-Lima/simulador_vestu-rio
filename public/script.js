@@ -61,6 +61,10 @@ function MenuFechar(){
         boxColor.classList.toggle("boxSelect21")
         boxColor.classList.toggle("boxSelect22")
     }
+    if(fileSelect.classList.toggle("boxSelect32")){
+        fileSelect.classList.toggle("boxSelect32")
+        fileSelect.classList.toggle("boxSelect31")
+    }
     if(mensagem.innerHTML = "..."){
         mensagem.innerHTML = "selecione um modelo"
     }
@@ -96,3 +100,14 @@ function poupUpFileSelect(){
     fileSelect.classList.toggle("boxSelect32")
 }
 BttFileSelect.addEventListener("click", poupUpFileSelect)
+
+//poupup para buscar arquivos:
+var bttSelectLogo = document.querySelector("#bttSelectLogo")
+function SelecionarLogo(){
+    var inputFile = document.querySelector("#fileBox")
+
+    if(inputFile){
+        inputFile.click()
+    }
+}
+bttSelectLogo.addEventListener("click", SelecionarLogo)

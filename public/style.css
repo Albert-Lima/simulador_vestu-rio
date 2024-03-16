@@ -236,3 +236,38 @@ header{
     flex-direction: row;
     gap: 10px;
 }
+.custom-file-upload {
+    border: none;
+    background-color: white;
+    height: 25px;
+}
+#fileBox{
+    background-color: green;
+    opacity: 0;
+    width: 150px;
+    height: 25px;
+    font-size: 10px;
+    position: relative;
+    z-index: 1;
+    top: -27px;
+    cursor: pointer;
+}
+.custom-file-upload div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    color: white;
+    z-index: 2;
+    cursor: pointer;
+}
+.custom-file-upload div:hover{
+    background-color: rgb(18, 18, 18);
+}
