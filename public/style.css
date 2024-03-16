@@ -163,6 +163,55 @@ header{
     gap: 10px;
     user-select: none;
 }
+.boxSelect21{
+    display: none;
+}
+.boxSelect22{
+    position: fixed;
+    top: calc(200px + 55px);
+    left: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.089);
+    border-radius: 10px;
+    padding: 30px 10px;
+    gap: 10px;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+}
+.boxSelect31{
+    display: none;
+}
+.boxSelect32{
+    position: fixed;
+    top: calc(200px + 55px + 118px);
+    left: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.089);
+    border-radius: 10px;
+    padding: 30px 10px;
+    gap: 10px;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+}
+.boxColor{
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    border-radius: 100%;
+    cursor: pointer;
+}
 .container-model1-1, .container-model2-1{
     width: 80px;
     height: 60px;
@@ -182,9 +231,8 @@ header{
     font-size: 10pt;
     font-weight: 500;
 }
-
-.boxColor{
-    width: 500px;
-    height: 20px;
-    border-radius: 100%;
+.containerBoxColor{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }

@@ -5,7 +5,8 @@ var display = document.querySelector(".display-vision")
 var mensagem = document.querySelector("#mensagem")
 var iconEdit = document.querySelectorAll(".iconEdit")
 var BttTshirts = document.querySelector("#bttOpenTshirts")
-var BttColors = document.querySelector("bttOpenColors")
+var BttColors = document.querySelector("#bttOpenColors")
+var BttFileSelect = document.querySelector("#bttOpenFileSelect")
 
 function MenuAbrir(){
     barra.forEach((e)=>{
@@ -52,11 +53,13 @@ function MenuFechar(){
     configAba.style.top = "55px"
     configAba.style.transition = "0.5s"
     configAba.style.boxShadow = "none"
-    if(ContainerTshirts.classList.contains("boxSelect11")){
-
-    }else  if(ContainerTshirts.classList.contains("boxSelect12")){
+    if(ContainerTshirts.classList.contains("boxSelect12")){
         ContainerTshirts.classList.toggle("boxSelect12")
         ContainerTshirts.classList.toggle("boxSelect11")
+    }
+    if(boxColor.classList.contains("boxSelect22")){
+        boxColor.classList.toggle("boxSelect21")
+        boxColor.classList.toggle("boxSelect22")
     }
     if(mensagem.innerHTML = "..."){
         mensagem.innerHTML = "selecione um modelo"
@@ -82,7 +85,14 @@ BttTshirts.addEventListener("click", poupUpTshirtsOpen)
 
 var boxColor = document.querySelector("#boxColor")
 function poupUpColorOpen(){
-    boxColor.classList.toggle("boxSelect")
-    boxColor.classList.toggle("boxSelect2")
+    boxColor.classList.toggle("boxSelect21")
+    boxColor.classList.toggle("boxSelect22")
 }
 BttColors.addEventListener("click", poupUpColorOpen)
+
+var fileSelect = document.querySelector("#fileSelect")
+function poupUpFileSelect(){
+    fileSelect.classList.toggle("boxSelect31")
+    fileSelect.classList.toggle("boxSelect32")
+}
+BttFileSelect.addEventListener("click", poupUpFileSelect)
