@@ -32,6 +32,7 @@ header{
     gap: 3px;
     cursor: pointer;
     border-radius: 5px;
+    user-select: none;
 }
 .logo{
     color: purple;
@@ -41,6 +42,7 @@ header{
     font-weight: 600;
     cursor: default;
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.055);
+    user-select: none;
 }
 .barra1-1, .barra2-1, .barra3-1{
     height: 3px;
@@ -48,6 +50,7 @@ header{
     border-radius: 4px;
     background-color: #060606;
     transition: 0.2s;
+    user-select: none;
 }
 .barra2-1{
     width: 80%;
@@ -90,6 +93,7 @@ header{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: white;
+    user-select: none;
 }
 .edit{
     display: flex;
@@ -128,6 +132,7 @@ header{
     align-items: center;
     justify-content: center;
     background-color: rgb(248, 248, 248);
+    user-select: none;
 }
 #mensagem{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -140,10 +145,10 @@ header{
 
 
 /*poup-ups de seleção*/
-.boxSelect{
-    display: none
+.boxSelect11{
+    display: none;
 }
-.boxSelect2{
+.boxSelect12{
     position: fixed;
     top: 55px;
     left: 155px;
@@ -156,6 +161,7 @@ header{
     border-radius: 10px;
     padding: 30px 10px;
     gap: 10px;
+    user-select: none;
 }
 .container-model1-1, .container-model2-1{
     width: 80px;
@@ -175,4 +181,10 @@ header{
 .title-style{
     font-size: 10pt;
     font-weight: 500;
+}
+
+.boxColor{
+    width: 500px;
+    height: 20px;
+    border-radius: 100%;
 }

@@ -5,6 +5,7 @@ var display = document.querySelector(".display-vision")
 var mensagem = document.querySelector("#mensagem")
 var iconEdit = document.querySelectorAll(".iconEdit")
 var BttTshirts = document.querySelector("#bttOpenTshirts")
+var BttColors = document.querySelector("bttOpenColors")
 
 function MenuAbrir(){
     barra.forEach((e)=>{
@@ -29,7 +30,7 @@ function MenuAbrir(){
     menuBtt.removeEventListener("click", MenuAbrir)
     menuBtt.addEventListener("click", MenuFechar)
     if(mensagem.textContent = "Clique no menu e comece a personalizar"){
-        mensagem.textContent = "funcionou"
+        mensagem.textContent = "selecione um modelo"
     }
 }
 menuBtt.addEventListener("click", MenuAbrir)
@@ -51,11 +52,14 @@ function MenuFechar(){
     configAba.style.top = "55px"
     configAba.style.transition = "0.5s"
     configAba.style.boxShadow = "none"
-    if(ContainerTshirts.classList.contains("boxSelect")){
+    if(ContainerTshirts.classList.contains("boxSelect11")){
 
-    }else  if(ContainerTshirts.classList.contains("boxSelect2")){
-        ContainerTshirts.classList.toggle("boxSelect2")
-        ContainerTshirts.classList.toggle("boxSelect")
+    }else  if(ContainerTshirts.classList.contains("boxSelect12")){
+        ContainerTshirts.classList.toggle("boxSelect12")
+        ContainerTshirts.classList.toggle("boxSelect11")
+    }
+    if(mensagem.innerHTML = "..."){
+        mensagem.innerHTML = "selecione um modelo"
     }
 
     display.removeAttribute('style')
@@ -67,7 +71,18 @@ function MenuFechar(){
 
 var ContainerTshirts = document.querySelector("#t-shirts")
 function poupUpTshirtsOpen(){
-    ContainerTshirts.classList.toggle("boxSelect")
-    ContainerTshirts.classList.toggle("boxSelect2")
+    ContainerTshirts.classList.toggle("boxSelect11")
+    ContainerTshirts.classList.toggle("boxSelect12")
+    if(mensagem.textContent = "selecione um modelo"){
+        mensagem.textContent = "..."
+    }
 }
 BttTshirts.addEventListener("click", poupUpTshirtsOpen)
+
+
+var boxColor = document.querySelector("#boxColor")
+function poupUpColorOpen(){
+    boxColor.classList.toggle("boxSelect")
+    boxColor.classList.toggle("boxSelect2")
+}
+BttColors.addEventListener("click", poupUpColorOpen)
